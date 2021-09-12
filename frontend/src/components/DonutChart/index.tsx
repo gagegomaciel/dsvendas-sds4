@@ -17,11 +17,7 @@ export const DonutChat = () => {
       const myLabels = data.map(item => item.sellerName);
       const mySeries = data.map(item => item.sum);
       
-  
       setChartData({ labels: myLabels, series: mySeries });
-  
-      console.log(chartData);
-  
     });
   }, [])
  
